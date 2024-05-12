@@ -11,6 +11,11 @@ To automate the process of Exctracting Transforming and Then using the DVC to st
 
 First and foremost we configure the Airflow using Docker to load its Docker image
 
+
+![Container](https://github.com/UM00/MLOPS_Assignment02/assets/113986416/15b74cc1-f418-4eff-a371-758f363ae31a)
+
+
+
 Then running it on a container locally
 
 Then we write our Dag scripts to automate the whole process
