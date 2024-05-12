@@ -1,3 +1,10 @@
+Last Assignment of FAST NUCES 2020-2024
+
+
+![fast logo](https://github.com/UM00/MLOPS_Assignment02/assets/113986416/3281c1ab-6eeb-40ef-8e92-84d3e891c083)
+
+
+
 THe Assignment was about Airflow in which we were to write a Dag script 
 
 To automate the process of Exctracting Transforming and Then using the DVC to store tha data and do its versioning
