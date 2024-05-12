@@ -12,6 +12,10 @@ If we talk about problems the first and foremost would be
 Module Import 
 The Dag file couldn't find the required resource like libraries for its functioning ultimately causing the whole script to fail
 Solution
+
+
 ![solution](https://github.com/UM00/MLOPS_Assignment02/assets/113986416/9e738445-e840-4887-ab06-bf72bfa80418)
+
+
 The solution we came up with was to build an image with the modules that Dag file couldn't find
 In this way we proceeded forward
