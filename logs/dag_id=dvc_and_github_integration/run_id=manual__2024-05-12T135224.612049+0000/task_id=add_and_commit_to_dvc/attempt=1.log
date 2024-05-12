@@ -1,0 +1,20 @@
+[2024-05-12T13:52:51.223+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-12T13:52:51.275+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dvc_and_github_integration.add_and_commit_to_dvc manual__2024-05-12T13:52:24.612049+00:00 [queued]>
+[2024-05-12T13:52:51.301+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dvc_and_github_integration.add_and_commit_to_dvc manual__2024-05-12T13:52:24.612049+00:00 [queued]>
+[2024-05-12T13:52:51.302+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-12T13:52:51.350+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): add_and_commit_to_dvc> on 2024-05-12 13:52:24.612049+00:00
+[2024-05-12T13:52:51.394+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'dvc_and_github_integration', 'add_and_commit_to_dvc', 'manual__2024-05-12T13:52:24.612049+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/Script.py', '--cfg-path', '/tmp/tmpbefi6n70']
+[2024-05-12T13:52:51.397+0000] {standard_task_runner.py:91} INFO - Job 7: Subtask add_and_commit_to_dvc
+[2024-05-12T13:52:51.399+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=231) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-12T13:52:51.401+0000] {standard_task_runner.py:63} INFO - Started process 240 to run task
+[2024-05-12T13:52:51.521+0000] {task_command.py:426} INFO - Running <TaskInstance: dvc_and_github_integration.add_and_commit_to_dvc manual__2024-05-12T13:52:24.612049+00:00 [running]> on host 850c43a7089d
+[2024-05-12T13:52:51.706+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='dvc_and_github_integration' AIRFLOW_CTX_TASK_ID='add_and_commit_to_dvc' AIRFLOW_CTX_EXECUTION_DATE='2024-05-12T13:52:24.612049+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-12T13:52:24.612049+00:00'
+[2024-05-12T13:52:51.707+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-12T13:52:51.732+0000] {Script.py:50} INFO - Adding and committing data to DVC...
+[2024-05-12T13:52:51.771+0000] {Script.py:55} INFO - Data added and committed to DVC.
+[2024-05-12T13:52:51.772+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-12T13:52:51.773+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-12T13:52:51.796+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dvc_and_github_integration, task_id=add_and_commit_to_dvc, run_id=manual__2024-05-12T13:52:24.612049+00:00, execution_date=20240512T135224, start_date=20240512T135251, end_date=20240512T135251
+[2024-05-12T13:52:51.898+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-12T13:52:51.963+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-12T13:52:51.982+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

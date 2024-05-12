@@ -1,0 +1,20 @@
+[2024-05-12T13:52:44.462+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-12T13:52:44.511+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dvc_and_github_integration.transform_data manual__2024-05-12T13:52:24.612049+00:00 [queued]>
+[2024-05-12T13:52:44.535+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dvc_and_github_integration.transform_data manual__2024-05-12T13:52:24.612049+00:00 [queued]>
+[2024-05-12T13:52:44.536+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-05-12T13:52:44.605+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_data> on 2024-05-12 13:52:24.612049+00:00
+[2024-05-12T13:52:44.622+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'dvc_and_github_integration', 'transform_data', 'manual__2024-05-12T13:52:24.612049+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/Script.py', '--cfg-path', '/tmp/tmp6b5_hx9i']
+[2024-05-12T13:52:44.624+0000] {standard_task_runner.py:91} INFO - Job 6: Subtask transform_data
+[2024-05-12T13:52:44.629+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=221) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-05-12T13:52:44.631+0000] {standard_task_runner.py:63} INFO - Started process 230 to run task
+[2024-05-12T13:52:44.788+0000] {task_command.py:426} INFO - Running <TaskInstance: dvc_and_github_integration.transform_data manual__2024-05-12T13:52:24.612049+00:00 [running]> on host 850c43a7089d
+[2024-05-12T13:52:44.980+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='dvc_and_github_integration' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-05-12T13:52:24.612049+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-12T13:52:24.612049+00:00'
+[2024-05-12T13:52:44.982+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-12T13:52:45.006+0000] {Script.py:43} INFO - Transforming data...
+[2024-05-12T13:52:45.054+0000] {Script.py:47} INFO - Data transformation complete.
+[2024-05-12T13:52:45.055+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-12T13:52:45.057+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-12T13:52:45.077+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dvc_and_github_integration, task_id=transform_data, run_id=manual__2024-05-12T13:52:24.612049+00:00, execution_date=20240512T135224, start_date=20240512T135244, end_date=20240512T135245
+[2024-05-12T13:52:45.167+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-12T13:52:45.262+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-12T13:52:45.281+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
